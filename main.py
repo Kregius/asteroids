@@ -38,6 +38,11 @@ def main():
             if rock.check_collisions(player):
                 print("Game over!")
                 return
+        for rock in asteroids:
+            for bullet in shots:
+                if bullet.check_collisions(rock):
+                    rock.split()
+                    bullet.kill()
         for item in drawable:
             item.draw(screen)          
         pygame.display.flip()
