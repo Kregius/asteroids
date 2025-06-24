@@ -8,6 +8,7 @@ w : makes ship(triangle) move forward
 s : makes ship go backwards
 a : rotates ship to the left
 d : rotates ship to the right
+SPACE : ship shoots bullets that destroy(or split) asteroids
 
 Game Over:
 
